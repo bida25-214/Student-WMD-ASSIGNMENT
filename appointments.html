@@ -2,127 +2,339 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Appointment Form</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<title>Appointment Form</title>
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="styles.css">
+
 </head>
 
 <body>
 
 <!-- NAVBAR -->
 <header>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-<div class="container">
-<a class="navbar-brand" href="index.html">
-    <img src="logo.jpg" alt="Hospital Logo" width="40" height="40" class="me-2">Unity Health Hospital</a>
 
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+<div class="container">
+
+<a class="navbar-brand" href="index.html">
+
+<img src="logo.jpg"
+alt="Hospital Logo"
+width="40"
+height="40"
+class="me-2">
+
+Unity Health Hospital
+
+</a>
+
+<button class="navbar-toggler"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#navbarNav">
+
 <span class="navbar-toggler-icon"></span>
+
 </button>
 
 <div class="collapse navbar-collapse" id="navbarNav">
+
 <ul class="navbar-nav ms-auto">
-<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-<li class="nav-item"><a class="nav-link" href="appointments.html">Appointments</a></li>
-<li class="nav-item"><a class="nav-link" href="table.html">Doctors Schedule</a></li>
-<li class="nav-item"><a class="nav-link active" href="doctors.html">Our Doctors</a></li>
+
+<li class="nav-item">
+<a class="nav-link" href="index.html">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="about.html">About</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="contact.html">Contact</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link active" href="appointments.html">Appointments</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="table.html">Doctors Schedule</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="doctors.html">Our Doctors</a>
+</li>
+
 </ul>
+
 </div>
+
 </div>
+
 </nav>
+
 </header>
 
+<!-- FORM SECTION -->
 <main class="container my-5">
-    <h2>BOOK AN APPOINTMENT</h2>
 
-    <form action="thankyou.html" method="GET">
+<div class="row justify-content-center">
 
-        <div class="mb-3">
-            <label for="firstname" class="form-label">First Name:</label>
-            <input type="text" id="firstname" name="firstname" 
-                   class="form-control w-25" required>
-        </div>
+<div class="col-md-8">
 
-        <div class="mb-3">
-            <label for="lastname" class="form-label">Last Name:</label>
-            <input type="text" id="lastname" name="lastname" 
-                   class="form-control w-25" required>
-        </div>
+<div class="card shadow-sm p-4">
 
-        <div class="mb-3">
-            <label for="email" class="form-label">Email:</label>
-            <input type="email" id="email" name="email" 
-                   class="form-control w-25" required>
-        </div>
+<h2 class="text-center mb-4">
+Book An Appointment
+</h2>
 
-        <div class="mb-3">
-            <label for="tel" class="form-label">Phone Number:</label>
-            <input type="tel" id="tel" name="phone" 
-                   class="form-control w-25" required>
-        </div>
+<form action="thankyou.html" method="GET">
 
-        <div class="mb-3">
-            <label for="speciality" class="form-label">Doctor Speciality:</label>
-            <select id="speciality" name="speciality" 
-                    class="form-select w-25" required>
-                <option value="" disabled selected>Select doctor speciality</option>
-                <option>Family Physician</option>
-                <option>Physiotherapist</option>
-                <option>Pathologist</option>
-                <option>Dermatologist</option>
-                <option>Gynaecologist</option>
-                <option>Phychiatrist</option>
-                <option>Emergency Doctor</option>
-                <option>Emergency Doctor</option>
-                <option>General Surgeon</option>
-            </select>
-        </div>
+<!-- FIRST NAME -->
+<div class="mb-3">
 
-        <div class="mb-3">
-            <label for="doctorname" class="form-label">Name of Doctor:</label>
-            <select id="doctorname" name="doctorname" 
-                    class="form-select w-25" required>
-                <option value="" disabled selected>Select a doctor</option>
-                <option>Dr. Ansu Fati</option>
-                <option>Dr. Simphiwe Nhlangulela</option>
-                <option>Dr. Asanda Mvana</option>
-                <option>Dr. Chloe Kelly</option>
-                <option>Dr. Mairelyz Gonzalez</option>
-                <option>Dr. Ngolo Kante</option>
-                <option>Dr. Michael Olise</option>
-                <option>Dr. Arda Guller</option>
-                <option>Dr. Lamine Yamal</option>
-            </select>
-        </div>
+<label for="firstname" class="form-label">
+First Name
+</label>
 
-        <div class="mb-3">
-            <label for="datetime" class="form-label">Appointment Date & Time:</label>
-            <input type="datetime-local" id="datetime" 
-                   name="appointment_datetime" 
-                   class="form-control w-25" required>
-        </div>
+<input type="text"
+id="firstname"
+name="firstname"
+class="form-control"
+required>
 
-        <button type="submit" class="btn btn-primary">
-            Book Appointment
-        </button>
+</div>
 
-    </form>
+<!-- LAST NAME -->
+<div class="mb-3">
+
+<label for="lastname" class="form-label">
+Last Name
+</label>
+
+<input type="text"
+id="lastname"
+name="lastname"
+class="form-control"
+required>
+
+</div>
+
+<!-- EMAIL -->
+<div class="mb-3">
+
+<label for="email" class="form-label">
+Email Address
+</label>
+
+<input type="email"
+id="email"
+name="email"
+class="form-control"
+required>
+
+</div>
+
+<!-- PHONE -->
+<div class="mb-3">
+
+<label for="tel" class="form-label">
+Phone Number
+</label>
+
+<input type="tel"
+id="tel"
+name="phone"
+class="form-control"
+required>
+
+</div>
+
+<!-- SPECIALITY -->
+<div class="mb-3">
+
+<label for="speciality" class="form-label">
+Doctor Speciality
+</label>
+
+<select id="speciality"
+name="speciality"
+class="form-select"
+required>
+
+<option value="" disabled selected>
+Select doctor speciality
+</option>
+
+<option value="Family Physician">
+Family Physician
+</option>
+
+<option value="Physiotherapist">
+Physiotherapist
+</option>
+
+<option value="Dermatologist">
+Dermatologist
+</option>
+
+<option value="Cardiologist">
+Cardiologist
+</option>
+
+<option value="Gynaecologist">
+Gynaecologist
+</option>
+
+<option value="Psychiatrist">
+Psychiatrist
+</option>
+
+<option value="Emergency Doctor">
+Emergency Doctor
+</option>
+
+<option value="General Surgeon">
+General Surgeon
+</option>
+
+</select>
+
+</div>
+
+<!-- DOCTOR NAME -->
+<div class="mb-3">
+
+<label for="doctorname" class="form-label">
+Name of Doctor
+</label>
+
+<select id="doctorname"
+name="doctorname"
+class="form-select"
+required>
+
+<option value="" disabled selected>
+Select a doctor
+</option>
+
+<option value="Dr. Ansu Fati">
+Dr. Ansu Fati
+</option>
+
+<option value="Dr. Simphiwe Nhlangula">
+Dr. Simphiwe Nhlangula
+</option>
+
+<option value="Dr. Asanda Mvana">
+Dr. Asanda Mvana
+</option>
+
+<option value="Dr. Chloe Kelly">
+Dr. Chloe Kelly
+</option>
+
+<option value="Dr. Mairelys Gonzalez">
+Dr. Mairelys Gonzalez
+</option>
+
+<option value="Dr. Ngolo Kante">
+Dr. Ngolo Kante
+</option>
+
+<option value="Dr. Arda Guler">
+Dr. Arda Guler
+</option>
+
+<option value="Dr. Michael Olise">
+Dr. Michael Olise
+</option>
+
+<option value="Dr. Lamine Yamal">
+Dr. Lamine Yamal
+</option>
+
+</select>
+
+</div>
+
+<!-- DATE & TIME -->
+<div class="mb-3">
+
+<label for="datetime" class="form-label">
+Appointment Date & Time
+</label>
+
+<input type="datetime-local"
+id="datetime"
+name="appointment_datetime"
+class="form-control"
+required>
+
+</div>
+
+<!-- SUBMIT BUTTON -->
+<div class="text-center">
+
+<button type="submit"
+class="btn btn-primary px-5">
+
+Book Appointment
+
+</button>
+
+</div>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
 </main>
 
-<!-- Bootstrap JS Bundle -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- FOOTER -->
 <footer class="bg-dark text-white text-center p-3">
-<p> 2026 Unity Health Hospital | All Rights Reserved</p>
+
+<p>&copy; 2026 Unity Health Hospital | All Rights Reserved</p>
+
 </footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- AUTO-FILL SCRIPT -->
+<script>
+
+const params = new URLSearchParams(window.location.search);
+
+const doctor = params.get("doctor");
+
+const speciality = params.get("speciality");
+
+if (doctor) {
+
+document.getElementById("doctorname").value = doctor;
+
+}
+
+if (speciality) {
+
+document.getElementById("speciality").value = speciality;
+
+}
+
+</script>
+
 </body>
 </html>
-
-

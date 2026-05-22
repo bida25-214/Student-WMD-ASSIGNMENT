@@ -1,189 +1,425 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Meet Our Doctors</title>
 
+<!-- Bootstrap CSS -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
 <link rel="stylesheet" href="styles.css">
+
 </head>
 
 <body>
 
 <!-- NAVBAR -->
 <header>
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
 <div class="container">
+
 <a class="navbar-brand" href="index.html">
-    <img src="logo.jpg" alt="Hospital Logo" width="40" height="40" class="me-2">Unity Health Hospital</a>
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+
+<img src="logo.jpg"
+alt="Hospital Logo"
+width="40"
+height="40"
+class="me-2">
+
+Unity Health Hospital
+
+</a>
+
+<button class="navbar-toggler"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#navbarNav">
+
 <span class="navbar-toggler-icon"></span>
+
 </button>
 
 <div class="collapse navbar-collapse" id="navbarNav">
+
 <ul class="navbar-nav ms-auto">
-<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-<li class="nav-item"><a class="nav-link" href="appointments.html">Appointments</a></li>
-<li class="nav-item"><a class="nav-link" href="table.html">Doctors Schedule</a></li>
-<li class="nav-item"><a class="nav-link active" href="doctors.html">Our Doctors</a></li>
+
+<li class="nav-item">
+<a class="nav-link" href="index.html">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="about.html">About</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="contact.html">Contact</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="appointments.html">Appointments</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="table.html">Doctors Schedule</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link active" href="doctors.html">Our Doctors</a>
+</li>
+
 </ul>
+
 </div>
+
 </div>
+
 </nav>
+
 </header>
 
 <!-- HERO SECTION -->
-<section class="light text-center py-5">
+<section class="bg-light text-center py-5">
+
 <div class="container">
+
 <h1 class="fw-bold">Our Medical Specialists</h1>
-<p class="text-muted">Experienced doctors dedicated to your health and well-being</p>
+
+<p class="text-muted">
+Experienced doctors dedicated to your health and well-being
+</p>
+
 </div>
+
 </section>
 
+<!-- DOCTORS SECTION -->
 <section class="container my-5">
+
 <div class="row g-4">
 
-<!-- Doctor Card -->
+<!-- Doctor 1 -->
 <div class="col-md-4 d-flex">
 
 <div class="card shadow-sm w-100 h-100">
-<img src="doctor 1" class="card-img-top doctor-img" alt="Doctor">
+
+<img src="fati.jpg"
+class="card-img-top doctor-img"
+alt="Doctor">
+
 <div class="card-body text-center d-flex flex-column">
+
 <h5 class="card-title">Dr. Ansu Fati</h5>
+
 <p class="text-primary">Family Physician</p>
-<p class="card-text small">Expert in heart conditions and cardiovascular health.</p>
-<a href="appointments.html" class="btn btn-primary btn-sm mt-auto">Book Appointment</a>
-</div>
-</div>
+
+<p class="card-text small">
+Expert in heart conditions and cardiovascular health.
+</p>
+
+<a href="appointments.html?doctor=Dr.%20Ansu%20Fati&speciality=Family%20Physician"
+class="btn btn-primary btn-sm mt-auto">
+
+Book Appointment
+
+</a>
+
 </div>
 
+</div>
 
+</div>
+
+<!-- Doctor 2 -->
 <div class="col-md-4 d-flex">
 
 <div class="card shadow-sm w-100 h-100">
-<img src="doctor 2(1).jpg" class="card-img-top doctor-img" alt="Doctor">
+
+<img src="simmy.png"
+class="card-img-top doctor-img"
+alt="Doctor">
+
 <div class="card-body text-center d-flex flex-column">
+
 <h5 class="card-title">Dr. Simphiwe Nhlangula</h5>
+
 <p class="text-primary">Physiotherapist</p>
-<p class="card-text small">Stronger movement, better recovery.</p>
-<a href="appointments.html" class="btn btn-primary btn-sm mt-auto">Book Appointment</a>
-</div>
-</div>
+
+<p class="card-text small">
+Stronger movement, better recovery.
+</p>
+
+<a href="appointments.html?doctor=Dr.%20Simphiwe%20Nhlangula&speciality=Physiotherapist"
+class="btn btn-primary btn-sm mt-auto">
+
+Book Appointment
+
+</a>
+
 </div>
 
+</div>
 
+</div>
+
+<!-- Doctor 3 -->
 <div class="col-md-4 d-flex">
 
 <div class="card shadow-sm w-100 h-100">
-<img src="doctor 3" class="card-img-top doctor-img" alt="Doctor">
+
+<img src="msaki.webp"
+class="card-img-top doctor-img"
+alt="Doctor">
+
 <div class="card-body text-center d-flex flex-column">
+
 <h5 class="card-title">Dr. Asanda Mvana</h5>
+
 <p class="text-primary">Dermatologist</p>
-<p class="card-text small">Specialist in skin care and treatment.</p>
-<a href="appointments.html" class="btn btn-primary btn-sm mt-auto">Book Appointment</a>
-</div>
-</div>
+
+<p class="card-text small">
+Specialist in skin care and treatment.
+</p>
+
+<a href="appointments.html?doctor=Dr.%20Asanda%20Mvana&speciality=Dermatologist"
+class="btn btn-primary btn-sm mt-auto">
+
+Book Appointment
+
+</a>
+
 </div>
 
+</div>
 
+</div>
+
+<!-- Doctor 4 -->
 <div class="col-md-4 d-flex">
 
 <div class="card shadow-sm w-100 h-100">
-<img src="doctor 4.jpg" class="card-img-top doctor-img" alt="Doctor">
+
+<img src="cloe.jpg"
+class="card-img-top doctor-img"
+alt="Doctor">
+
 <div class="card-body text-center d-flex flex-column">
+
 <h5 class="card-title">Dr. Chloe Kelly</h5>
+
 <p class="text-primary">Cardiologist</p>
-<p class="card-text small">Focused on heart disease prevention.</p>
-<a href="appointments.html" class="btn btn-primary btn-sm mt-auto">Book Appointment</a>
-</div>
-</div>
+
+<p class="card-text small">
+Focused on heart disease prevention.
+</p>
+
+<a href="appointments.html?doctor=Dr.%20Chloe%20Kelly&speciality=Cardiologist"
+class="btn btn-primary btn-sm mt-auto">
+
+Book Appointment
+
+</a>
+
 </div>
 
+</div>
 
+</div>
+
+<!-- Doctor 5 -->
 <div class="col-md-4 d-flex">
 
 <div class="card shadow-sm w-100 h-100">
-<img src="Doctor 5" class="card-img-top doctor-img" alt="Doctor">
+
+<img src="gonzalez 2.0.jpg"
+class="card-img-top doctor-img"
+alt="Doctor">
+
 <div class="card-body text-center d-flex flex-column">
+
 <h5 class="card-title">Dr. Mairelys Gonzalez</h5>
+
 <p class="text-primary">Gynaecologist</p>
-<p class="card-text small">Compassionate care for women.</p>
-<a href="appointments.html" class="btn btn-primary btn-sm mt-auto">Book Appointment</a>
-</div>
-</div>
+
+<p class="card-text small">
+Compassionate care for women.
+</p>
+
+<a href="appointments.html?doctor=Dr.%20Mairelys%20Gonzalez&speciality=Gynaecologist"
+class="btn btn-primary btn-sm mt-auto">
+
+Book Appointment
+
+</a>
+
 </div>
 
+</div>
+
+</div>
+
+<!-- Doctor 6 -->
 <div class="col-md-4 d-flex">
 
 <div class="card shadow-sm w-100 h-100">
-<img src="doctor 6.jpg" class="card-img-top doctor-img" alt="Doctor">
+
+<img src="kante 2.0.webp"
+class="card-img-top doctor-img"
+alt="Doctor">
+
 <div class="card-body text-center d-flex flex-column">
+
 <h5 class="card-title">Dr. Ngolo Kante</h5>
+
 <p class="text-primary">Psychiatrist</p>
-<p class="card-text small">Stonger minds, Healthier lives.</p>
-<a href="appointments.html" class="btn btn-primary btn-sm mt-auto">Book Appointment</a>
-</div>
-</div>
+
+<p class="card-text small">
+Stronger minds, healthier lives.
+</p>
+
+<a href="appointments.html?doctor=Dr.%20Ngolo%20Kante&speciality=Psychiatrist"
+class="btn btn-primary btn-sm mt-auto">
+
+Book Appointment
+
+</a>
+
 </div>
 
+</div>
+
+</div>
+
+<!-- Doctor 7 -->
 <div class="col-md-4 d-flex">
 
 <div class="card shadow-sm w-100 h-100">
-<img src="doctor 7.jpg" class="card-img-top doctor-img" alt="Doctor">
+
+<img src="guller.avif"
+class="card-img-top doctor-img"
+alt="Doctor">
+
 <div class="card-body text-center d-flex flex-column">
+
 <h5 class="card-title">Dr. Arda Guler</h5>
+
 <p class="text-primary">Emergency Doctor</p>
-<p class="card-text small">Care without delay.</p>
-<a href="appointments.html" class="btn btn-primary btn-sm mt-auto">Book Appointment</a>
-</div>
-</div>
+
+<p class="card-text small">
+Care without delay.
+</p>
+
+<a href="appointments.html?doctor=Dr.%20Arda%20Guler&speciality=Emergency%20Doctor"
+class="btn btn-primary btn-sm mt-auto">
+
+Book Appointment
+
+</a>
+
 </div>
 
+</div>
+
+</div>
+
+<!-- Doctor 8 -->
 <div class="col-md-4 d-flex">
 
 <div class="card shadow-sm w-100 h-100">
-<img src="doctor 8.jpg" class="card-img-top doctor-img" alt="Doctor">
+
+<img src="olise.png"
+class="card-img-top doctor-img"
+alt="Doctor">
+
 <div class="card-body text-center d-flex flex-column">
+
 <h5 class="card-title">Dr. Michael Olise</h5>
+
 <p class="text-primary">Emergency Doctor</p>
-<p class="card-text small">Care without delay.</p>
-<a href="appointments.html" class="btn btn-primary btn-sm mt-auto">Book Appointment</a>
+
+<p class="card-text small">
+Care without delay.
+</p>
+
+<a href="appointments.html?doctor=Dr.%20Michael%20Olise&speciality=Emergency%20Doctor"
+class="btn btn-primary btn-sm mt-auto">
+
+Book Appointment
+
+</a>
+
 </div>
+
 </div>
+
 </div>
+
+<!-- Doctor 9 -->
 <div class="col-md-4 d-flex">
 
 <div class="card shadow-sm w-100 h-100">
-<img src="doctor 9.jpg" class="card-img-top doctor-img" alt="Doctor">
+
+<img src="yamal.jpg"
+class="card-img-top doctor-img"
+alt="Doctor">
+
 <div class="card-body text-center d-flex flex-column">
+
 <h5 class="card-title">Dr. Lamine Yamal</h5>
+
 <p class="text-primary">General Surgeon</p>
-<p class="card-text small">Excellence in surgical care.</p>
-<a href="appointments.html" class="btn btn-primary btn-sm mt-auto">Book Appointment</a>
-</div>
-</div>
+
+<p class="card-text small">
+Excellence in surgical care.
+</p>
+
+<a href="appointments.html?doctor=Dr.%20Lamine%20Yamal&speciality=General%20Surgeon"
+class="btn btn-primary btn-sm mt-auto">
+
+Book Appointment
+
+</a>
+
 </div>
 
-
+</div>
 
 </div>
+
+</div>
+
 </section>
 
+<!-- CALL TO ACTION -->
 <section class="bg-primary text-white text-center py-5">
+
 <h3>Need Medical Assistance?</h3>
+
 <p>Book an appointment with our professionals today.</p>
-<a href="appointments.html" class="btn btn-light">Book Now</a>
+
+<a href="appointments.html"
+class="btn btn-light">
+
+Book Now
+
+</a>
+
 </section>
+
+<!-- FOOTER -->
 <footer class="bg-dark text-white text-center p-3">
+
 <p>2026 Unity Health Hospital | All Rights Reserved</p>
+
 </footer>
 
 <!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

@@ -83,3 +83,73 @@ p {
 .navbar-brand img {
   border-radius: 50%; /* makes it circular */
 }
+
+body{
+    animation: fadeIn 0.8s ease-in;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform: translateY(10px);
+    }
+
+    to{
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+/* MOBILE DEVICES */
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .navbar-brand {
+        font-size: 18px;
+    }
+
+    .doctor-img {
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+
+}
+/* APPOINTMENT FORM MOBILE */
+@media (max-width: 768px) {
+
+    form {
+        width: 100%;
+    }
+
+    .form-control,
+    .form-select,
+    .btn {
+        width: 100% !important;
+    }
+
+}
+.doctor-img {
+    height: 300px;
+    object-fit: cover;
+}
