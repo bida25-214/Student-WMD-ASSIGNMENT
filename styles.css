@@ -42,7 +42,6 @@ footer {
 p {
     font-size: 1em;
 }
-/* HERO CONTAINER */
 .hero {
   position: relative;
   width: 100%;
@@ -50,14 +49,12 @@ p {
   overflow: hidden;
 }
 
-/* IMAGE */
 .hero-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-/* TEXT ON TOP OF IMAGE */
 .hero-text {
   position: absolute;
   top: 50%;
@@ -99,7 +96,6 @@ body{
         transform: translateY(0);
     }
 }
-/* MOBILE DEVICES */
 @media (max-width: 768px) {
 
     h1 {
@@ -135,7 +131,6 @@ body{
     }
 
 }
-/* APPOINTMENT FORM MOBILE */
 @media (max-width: 768px) {
 
     form {
@@ -145,7 +140,7 @@ body{
     .form-control,
     .form-select,
     .btn {
-        width: 100% !important;
+        width: 100%;
     }
 
 }
